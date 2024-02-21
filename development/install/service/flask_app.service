@@ -1,0 +1,11 @@
+[Unit]
+Description=Minha Aplicação Flask
+
+[Service]
+ExecStart=$HOME/AdaTech-Projeto-Containers/development/script/iniciar_flask_app.sh
+Restart=always
+User=root
+WorkingDirectory=$HOME/AdaTech-Projeto-Containers/development
+
+[Install]
+WantedBy=multi-user.target
